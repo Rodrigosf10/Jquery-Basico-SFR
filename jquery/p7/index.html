@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery-3.6.0.min.js"></script>
+	<title>Radios</title>
+</head>
+<body>
+	<label>Si</label>
+	<input type="radio" id="radiosi" name="miradio">
+	<label>No</label>
+	<input type="radio" id="radiono" name="miradio">
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#radiosi').click(function(){
+			alert("Es Positivo");
+		});
+		$('#radiono').click(function(){
+			alert("Es Negativo");
+		});
+	});
+</script>

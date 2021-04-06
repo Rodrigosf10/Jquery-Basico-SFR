@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery-3.6.0.min.js"></script>
+	<title>Control de Select</title>
+</head>
+<body>
+	<select id="miselect">
+		<option value="">Seleccionar</option>
+		<option value="1">Valor 1</option>
+		<option value="2">Valor 2</option>
+		<option value="3">Valor 3</option>
+	</select>
+	<button id="miboton">Seleccionar Opcion</button>
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		//Esta es la forma de inicializar que opcion sea la opcion por default
+		//$('#miselect').val('2');
+		$('#miboton').click(function(){
+			alert($('#miselect').val());
+		});
+	});
+</script>
